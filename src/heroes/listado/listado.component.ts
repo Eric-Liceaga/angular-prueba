@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
+  selector: 'app-listado',
+  templateUrl: './listado.component.html',
 
+})
+export class ListadoComponent  {
 
   title = 'ngfor';
   heroes: string[] = ['spider','iron', 'hulk', 'aqua'];
@@ -17,8 +16,6 @@ export class AppComponent {
   () {
 
     this.heroeb = this.heroes.shift() || '';
-
-
 
   }
 
